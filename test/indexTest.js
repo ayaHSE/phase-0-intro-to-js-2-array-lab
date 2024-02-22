@@ -1,4 +1,20 @@
-require ( './helpers.js' );
+// Import the required modules and functions from index.js
+const {
+  cats,
+  destructivelyAppendCat,
+  destructivelyPrependCat,
+  destructivelyRemoveLastCat,
+  destructivelyRemoveFirstCat,
+  appendCat,
+  prependCat,
+  removeLastCat,
+  removeFirstCat
+} = require('./index.js');
+
+// Import the expect function from the Chai library
+const { expect } = require('chai');
+
+// Your test cases go below...
 
 describe('index.js', function () {
   describe('cats', function () {
